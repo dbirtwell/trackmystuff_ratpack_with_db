@@ -102,7 +102,7 @@ class TrackMyStuffTest {
 		webClient.closeAllWindows()
 		
 	
-	} / END TEST
+	} // END TEST
 	
     
 
