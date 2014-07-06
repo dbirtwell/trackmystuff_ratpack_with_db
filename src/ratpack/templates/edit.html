@@ -1,0 +1,47 @@
+<html>  
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+    <title>Track My Stuff</title>
+  </head>
+  
+  <body>
+	
+<h1>Edit Existing Item Form</h1>
+<p>Please edit any information below for the item.</p>
+
+<form action="/update/item/${model.id}" method="post" accept-charset="utf-8">
+
+    <!-- hidden to preserve the item id -->
+    <input type="hidden" name="id" id="id" value="${model.id}">
+  
+    <label for="name">Name:</label>    
+    <input type="text" name="name" id="name" value="${model.name}">
+    <br><br>  
+  
+    <label for="item_type">Type:</label>    
+    <input type="text" name="item_type" id="item_type" value="${model.itemType}">
+    <br><br>
+
+    <label for="item_location_1">Location 1:</label>        
+    <input type="text" name="item_location_1" id="item_location_1" value="${model.itemLocation_1}">    
+    <br><br>
+
+    <label for="item_location_2">Location 2:</label>        
+    <input type="text" name="item_location_2" id="item_location_2" value="${model.itemLocation_2}">    
+    <br><br>
+    
+  Description:
+  <br>
+  <textarea name="description" id="description" rows="3" cols="25">${model.description}</textarea>  
+
+  <p>
+    <button type="submit">Update</button>
+  </p>
+</form>
+  
+<a href="/">Cancel</a>	
+
+  </body>
+	
+</html>	

@@ -1,0 +1,42 @@
+<html>  
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+    <title>Track My Stuff</title>
+  </head>
+  
+  <body>
+    <div id="header">
+      <p><img src="images/magnify_sm.png"></p>    
+      <h1>Track My Stuff</h1>
+      <p>A demo CRUD application written using Groovy and Ratpack.</p>
+      <hr/>    
+    </div>
+
+  <table class="gridtable">
+    <tr>
+      <th>ID</th><th>NAME</th><th>TYPE</th><th>PRIMARY LOCATION</th><th>SECONDARY LOCATION</th><th>EDIT</th><th>DELETE</th>
+    </tr>
+
+<% model.items.each { %>
+    <tr>
+      <td>${it.id}</td>
+      <td>${it.name}</td>
+      <td>${it.itemType}</td>
+      <td>${it.itemLocation_1}</td>
+      <td>${it.itemLocation_2}</td>
+
+      <td><a href="/edit/${it.id}"><img src="images/edit.png" /></td>
+   	  <td><a href="/delete/${it.id}"><img src="images/delete.png" /></td>
+    </tr>
+<% }%>
+
+</table>
+
+<br>
+<br>
+<p><a href="/new">Add a New Item!</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>  
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+    <title>Track My Stuff</title>
+  </head>
+  
+  <body>
+
+<h1>New Item Form</h1>
+<p>Please enter information about the new item.</p>
+<form action="/submit" method="post" accept-charset="utf-8">
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+  <br><br>
+  
+  <label for="item_type">Type:</label>
+  <input type="text" name="item_type" id="item_type">
+  <br><br>
+
+  <label for="item_location_1">Location 1:</label>
+  <input type="text" name="item_location_1" id="item_location_1">
+  <br><br>
+    
+  <label for="item_location_2">Location 2:</label>
+  <input type="text" name="item_location_2" id="item_location_2">
+  <br><br>
+  
+  Description:
+  <br>
+  <textarea name="description" id="description" rows="3" cols="25"></textarea>
+  
+  <p>
+    <button type="submit">Save</button>
+  </p>
+  
+</form>
+
+<a href="/">Cancel</a>
+
+</body>
+</html>
