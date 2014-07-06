@@ -77,7 +77,6 @@ class TrackMyStuffTest {
 
 		// ----------------------------------------------
 		// Delete Test Data we added
-		// Delete Test Data we added
 		// ----------------------------------------------
 		// println "Now deleting data with ID: ${testDataId}"
 
@@ -103,12 +102,8 @@ class TrackMyStuffTest {
 		webClient.closeAllWindows()
 		
 	
-	} /// END TEST
+	} / END TEST
 	
-    @Test public void canConstructAPerson() {
-        //Person p = new Person()
-        //assertEquals('Barry', p.name)
-    }
-
+    
 
 }
